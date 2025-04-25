@@ -1,2 +1,2 @@
 # rmtransportco
-rmtransportco is website for transport company
+rmtransportco is a static website for transport company
