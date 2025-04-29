@@ -227,7 +227,7 @@ a:hover {
   background-color: #e85c00;
 }
 
-/* Responsive Design Code*/
+/* Responsive Design*/
 @media (max-width: 768px) {
   .main-header {
     flex-direction: column;
