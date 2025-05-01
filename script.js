@@ -1,7 +1,7 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
-// Responsive Code
+// Below code for slide in prvious and next slide code Written by me
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.remove('active');
