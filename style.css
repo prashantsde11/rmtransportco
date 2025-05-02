@@ -228,7 +228,7 @@ a:hover {
 }
 
 
-@media (max-width: 768px) { /* Responsive Design*/
+@media (max-width: 768px) { /* Responsive code*/
   .main-header {
     flex-direction: column;
     text-align: center;
