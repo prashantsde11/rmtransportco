@@ -226,8 +226,8 @@ a:hover {
 .enquiry-form button:hover {
   background-color: #e85c00;
 }
-
 /* Responsive css code written here*/
+
 @media (max-width: 768px) { 
   .main-header {
     flex-direction: column;
