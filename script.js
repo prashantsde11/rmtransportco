@@ -1,28 +1,25 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
-// Below code for slide in prvious and next slide code Written by me
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-  });
+const showSlide = (index) => {
+  slides.forEach(slide => slide.classList.remove('active'));
   slides[index].classList.add('active');
-}
+};
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
+const nextSlide = () => {
+  currentSlide = (currentSlide + 1) % totalSlides;
   showSlide(currentSlide);
-}
+};
 
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+const prevSlide = () => {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
   showSlide(currentSlide);
-}
+};
 
-function toggleMenu() {
+const toggleMenu = () => {
   document.querySelector('.header-right').classList.toggle('active');
-}
-
+};
 
 // Auto-slide every 3 seconds
 setInterval(nextSlide, 3000);
