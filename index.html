@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>R.M. Transport Co. | Transportation Services Across India</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header & Navigation -->
+  <!-- Header & Navbar -->
   <header class="main-header">
     <div class="header-left">
       <img src="assets/logo.png" alt="R.M. Transport Logo" class="logo" />
@@ -17,51 +17,48 @@
         <p>Safe & On-Time Transportation Across India</p>
       </div>
     </div>
-    <nav class="header-right">
-      <a href="#about">ABOUT</a>
-      <a href="#services">SERVICES</a>
-      <a href="#vehicles">VEHICLES</a>
-      <a href="#contact">CONTACT</a>
-      <a href="#enquiry">ENQUIRY</a>
+    <nav class="header-right" aria-label="Main Navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#contact">Contact</a>
+      <a href="#enquiry">Enquiry</a>
     </nav>
   </header>
 
   <!-- Image Slider -->
-  <section class="slider-section">
+  <section class="slider-section" aria-label="Image Slider">
     <div class="slider">
-      <img src="assets/rmt_slide1.jpg" alt="Slide 1" class="slide active" />
-      <img src="assets/rmt_slide2.jpg" alt="Slide 2" class="slide" />
-      <img src="assets/rmt_slide3.jpg" alt="Slide 3" class="slide" />
-      <img src="assets/rmt_slide4.jpg" alt="Slide 4" class="slide" />
-      <img src="assets/rmt_slide5.jpg" alt="Slide 5" class="slide" />
-      <img src="assets/rmt_slide6.jpg" alt="Slide 6" class="slide" />
-      <img src="assets/rmt_slide8.jpg" alt="Slide 8" class="slide" />
-      <img src="assets/rmt_slide9.jpg" alt="Slide 9" class="slide" />
-      <button class="prev" onclick="prevSlide()" aria-label="Previous Slide">❮</button>
-      <button class="next" onclick="nextSlide()" aria-label="Next Slide">❯</button>
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+      <div class="slides">
+        <img src="assets/rmt_slide1.jpg" alt="Slide 1" class="slide active">
+        <img src="assets/rmt_slide2.jpg" alt="Slide 2" class="slide">
+        <img src="assets/rmt_slide3.jpg" alt="Slide 3" class="slide">
+        <img src="assets/rmt_slide4.jpg" alt="Slide 4" class="slide">
+        <img src="assets/rmt_slide5.jpg" alt="Slide 5" class="slide">
+        <img src="assets/rmt_slide6.jpg" alt="Slide 6" class="slide">
+        <img src="assets/rmt_slide8.jpg" alt="Slide 8" class="slide">
+        <img src="assets/rmt_slide9.jpg" alt="Slide 9" class="slide">
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
-      <h2>ABOUT US</h2>
-      <p class="section-intro">
-        🚛 <strong>R.M. Transport Co.</strong>, based in <strong>Vasai East, Mumbai</strong>, provides safe, reliable, and on-time transportation services across India.
-      </p>
-      <p>
-        With a modern fleet and experienced team, we ensure smooth and timely movement of goods. Our mission is a stress-free, dependable transport experience—every time.
-      </p>
+      <h2>About Us</h2>
+      <p class="section-intro">🚛 <strong>R.M. Transport Co.</strong>, based in <strong>Vasai East, Mumbai</strong>, provides safe, reliable, and on-time transportation services across India.</p>
+      <p>With a well-maintained fleet and experienced team, we ensure smooth and timely delivery of goods nationwide.</p>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="section bg-light">
     <div class="container">
-      <h2>OUR SERVICES</h2>
-      <p class="section-intro">
-        🚚 <strong>Comprehensive Transport Solutions Across India</strong>
-      </p>
+      <h2>Our Services</h2>
+      <p class="section-intro">🚚 <strong>Comprehensive Transport Solutions Across India</strong></p>
+      <p>We specialize in efficient and timely freight transport, tailored to your cargo needs.</p>
       <ul>
         <li>Door-to-door freight transport</li>
         <li>Long-distance & inter-state trucking</li>
@@ -75,10 +72,9 @@
   <!-- Vehicles Section -->
   <section id="vehicles" class="section">
     <div class="container">
-      <h2>VEHICLE TYPES</h2>
-      <p class="section-intro">
-        🚛 <strong>Reliable, Safe & On-Time Transport Services Across India</strong>
-      </p>
+      <h2>Vehicle Types</h2>
+      <p class="section-intro">🚛 <strong>Reliable, Safe & On-Time Transport Services Across India</strong></p>
+      <p>Our specialized fleet supports various cargo needs throughout the country.</p>
       <ul>
         <li>Tempo 407</li>
         <li>LPT 17 FT & LPT 19 FT</li>
@@ -92,33 +88,33 @@
   <!-- Contact Section -->
   <section id="contact" class="section bg-light">
     <div class="container">
-      <h2>CONTACT US</h2>
+      <h2>Contact Us</h2>
       <p><strong>Location:</strong> Vasai East, Mumbai, Maharashtra – 401208</p>
       <p><strong>Phone:</strong> +91 9323915859 / +91 8668849851 / +91 9324638989</p>
       <p><strong>Email:</strong> <a href="mailto:rmtransportcompany@gmail.com">rmtransportcompany@gmail.com</a></p>
-      <p><strong>Website:</strong> <a href="https://www.rmtransportco.in" target="_blank" rel="noopener">www.rmtransportco.in</a></p>
+      <p><strong>Website:</strong> <a href="https://www.rmtransportco.in" target="_blank">www.rmtransportco.in</a></p>
     </div>
   </section>
 
   <!-- Map Section -->
   <section id="map-contact" class="section">
     <div class="container">
-      <h2>OUR LOCATION</h2>
+      <h2>Our Location</h2>
       <p><strong>Address:</strong> Vasai East, Mumbai, Maharashtra – 401208</p>
       <div class="map-container">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.9103228051717!2d72.8567154!3d19.4132411"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
         </iframe>
       </div>
     </div>
   </section>
 
-  <!-- Enquiry Form -->
+  <!-- Enquiry Section -->
   <section id="enquiry" class="section">
     <div class="container">
       <h2>Enquiry Form</h2>
-      <form action="mailto:rmtransportcompany@gmail.com" method="POST" class="enquiry-form">
+      <form action="your-mail-handler.php" method="POST" class="enquiry-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <input type="text" name="phone" placeholder="Phone Number" required />
@@ -129,7 +125,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer">  
     <div class="container">
       <p>&copy; 2025 R.M. Transport Co. | All rights reserved.</p>
       <div class="social-links">
