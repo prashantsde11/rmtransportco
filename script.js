@@ -1,17 +1,23 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
-const total = slides.length;
-const headerRight = document.querySelector('.header-right');
+const totalSlides = slides.length;
 
 const showSlide = index => {
-  document.querySelector('.slide.active')?.classList.remove('active');
+  slides.forEach(slide => slide.classList.remove('active'));
   slides[index].classList.add('active');
 };
 
-const nextSlide = () => showSlide(currentSlide = (currentSlide + 1) % total);
-const prevSlide = () => showSlide(currentSlide = (currentSlide - 1 + total) % total);
+const changeSlide = step => {
+  currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+  showSlide(currentSlide);
+};
 
-const toggleMenu = () => headerRight.classList.toggle('active');
+const nextSlide = () => changeSlide(1);
+const prevSlide = () => changeSlide(-1);
+
+const toggleMenu = () => {
+  document.querySelector('.header-right').classList.toggle('active');
+};
 
 // Auto-slide every 3 seconds
 setInterval(nextSlide, 3000);
