@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #1e3c72;
+  --accent-color: #ff6b00;
+  --accent-hover: #e85c00;
+  --bg-light: #fffbe6;
+  --text-color: #333;
+}
+
 /* Reset & Base */
 * {
   margin: 0;
@@ -7,21 +15,22 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fffbe6;
-  color: #333;
+  background-color: var(--bg-light);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
 a {
-  color: #ff6b00;
+  color: var(--accent-color);
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+/* Layout */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -31,13 +40,14 @@ a:hover {
 /* Header */
 .main-header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: white;
-  color: #1e3c72;
+  flex-wrap: wrap;
   padding: 15px 30px;
-  border-bottom: 4px solid #ff6b00;
+  background: #fff;
+  color: var(--primary-color);
+  border-bottom: 4px solid var(--accent-color);
+  text-align: center;
 }
 
 .header-left {
@@ -54,68 +64,67 @@ a:hover {
 
 .company-info h1 {
   font-size: 24px;
-  color: #1e3c72;
+  color: var(--primary-color);
 }
 
 .company-info p {
   font-size: 14px;
-  color: #ff6b00;
+  color: var(--accent-color);
 }
 
 /* Navigation */
 .header-right {
   display: flex;
+  gap: 25px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   margin-top: 10px;
 }
 
 .header-right a {
-  color: #1e3c72;
+  color: var(--primary-color);
   font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.5px;
   padding: 8px 14px;
   border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease-in-out;
 }
 
 .header-right a:hover {
-  background-color: #ff6b00;
-  color: white;
+  background: var(--accent-color);
+  color: #fff;
   transform: scale(1.05);
 }
 
 .header-right a:active {
-  background-color: #e55a00;
-  color: white;
+  background: #e55a00;
+  color: #fff;
 }
 
 /* Slider */
 .slider-section {
-  background-color: #fffbe6;
+  background: var(--bg-light);
   padding: 10px 0;
 }
 
 .slider {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff;
 }
 
 .slide {
   display: none;
+  object-fit: contain;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
   transition: opacity 1s ease-in-out;
   border-radius: 8px;
 }
@@ -129,18 +138,18 @@ a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #1e3c72;
-  color: white;
+  background: var(--primary-color);
+  color: #fff;
   padding: 10px 14px;
-  border: none;
-  border-radius: 50%;
   font-size: 24px;
+  border-radius: 50%;
+  border: none;
   cursor: pointer;
   z-index: 10;
 }
 
 .prev:hover, .next:hover {
-  background: #ff6b00;
+  background: var(--accent-color);
 }
 
 .prev { left: 10px; }
@@ -150,16 +159,16 @@ a:hover {
 .section {
   padding: 40px 15px;
   text-align: center;
-  background-color: #fff;
+  background: #fff;
 }
 
 .section:nth-of-type(even) {
-  background-color: #fffbe6;
+  background: var(--bg-light);
 }
 
 .section h2 {
   font-size: 30px;
-  color: #1e3c72;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
@@ -179,10 +188,10 @@ a:hover {
 
 /* Footer */
 .footer {
-  background: #1e3c72;
-  color: white;
-  text-align: center;
+  background: var(--primary-color);
+  color: #fff;
   padding: 20px;
+  text-align: center;
   font-size: 14px;
 }
 
@@ -191,7 +200,7 @@ a:hover {
   width: 100%;
   max-width: 900px;
   margin: 20px auto;
-  border: 2px solid #1e3c72;
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -214,18 +223,17 @@ a:hover {
 }
 
 .enquiry-form button {
-  background-color: #ff6b00;
-  color: white;
+  background: var(--accent-color);
+  color: #fff;
   padding: 12px;
   font-size: 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .enquiry-form button:hover {
-  background-color: #e85c00;
+  background: var(--accent-hover);
 }
 
 /* Social Links */
@@ -241,7 +249,7 @@ a:hover {
 .social-icon {
   width: 28px;
   height: 28px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
@@ -249,11 +257,10 @@ a:hover {
   filter: brightness(1.2);
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 768px) {
   .main-header {
     flex-direction: column;
-    text-align: center;
   }
 
   .logo {
@@ -263,7 +270,6 @@ a:hover {
   .header-right {
     flex-direction: row;
     gap: 18px;
-    margin-top: 10px;
   }
 
   .section {
@@ -283,12 +289,6 @@ a:hover {
   .header-right {
     flex-direction: column;
     gap: 10px;
-    margin-top: 15px;
-  }
-
-  .header-right a {
-    font-size: 15px;
-    padding: 6px 12px;
   }
 
   .section {
@@ -297,5 +297,10 @@ a:hover {
 
   .section h2 {
     font-size: 22px;
+  }
+
+  .header-right a {
+    font-size: 15px;
+    padding: 6px 12px;
   }
 }
